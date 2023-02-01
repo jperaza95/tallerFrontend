@@ -1,7 +1,36 @@
 //import logo from './logo.svg';
+
+import './App.css';
+import Lista from './components2/Lista';
+
+let App = () => {
+  
+  
+  return (
+    <div className="App">
+      <Lista/>
+    </div>
+
+  );
+}
+
+export default App;
+
+//JSX
+//class -> className
+//for -> htmlFor
+
+//npm install 
+//npm start
+//npm run build -> version para produccion
+
+
+/*
 import './App.css';
 import Information from './components/Information';
 import Persona from './components/Persona';
+import Contacto from './components/Contacto';
+import Texto from './components/Texto';
 
 let App = () => {
   let nombre = "Santiago";
@@ -22,11 +51,14 @@ let App = () => {
       <Information dato = "Andres" otro = "Mignone"/>
       <Information dato = "Julio" otro = "Peraza"/>
       <hr/>
-      {/* {nombres.map(nom=><p>{nom}</p>)} */}
-      {/* {nombres.map((nom,i) => <Persona key={i} nombre = {nom}/>)} */}
-      {/* {personas.map(objPersona => <Persona key={objPersona.id} nombre = {objPersona.nombre} edad={objPersona.edad}/>)} */}
+      {{nombres.map(nom=><p>{nom}</p>)} }
+      {{nombres.map((nom,i) => <Persona key={i} nombre = {nom}/>)} }
+      { {personas.map(objPersona => <Persona key={objPersona.id} nombre = {objPersona.nombre} edad={objPersona.edad}/>)} }
       {personas.map(objPersona => <Persona key={objPersona.id} {...objPersona}/>)}  
-
+      <hr/>
+      <Contacto/>
+      <hr/>
+      <Texto/>
     </div>
 
   );
@@ -34,10 +66,5 @@ let App = () => {
 
 export default App;
 
-//JSX
-//class -> className
-//for -> htmlFor
 
-//npm install 
-//npm start
-//npm run build -> version para produccion
+*/ 
