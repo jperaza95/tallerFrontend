@@ -1,20 +1,31 @@
-//import logo from './logo.svg';
-
-import './App.css';
-import Lista from './components2/Lista';
+//import './App.css';
+import Contenido from './componentsEjemplo/Contenido';
+import Menu from './componentsEjemplo/Menu';
+import "./estilos.css";
 
 let App = () => {
   
   
   return (
-    <div className="App">
-      <Lista/>
-    </div>
+    <>
+      <Menu/>
+      <Contenido/>
+    </>
+   
 
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
 
 //JSX
 //class -> className
@@ -23,6 +34,7 @@ export default App;
 //npm install 
 //npm start
 //npm run build -> version para produccion
+//import Lista from './components2/Lista';
 
 
 /*
