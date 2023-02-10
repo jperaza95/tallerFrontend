@@ -1,16 +1,25 @@
 //import './App.css';
+import "./estilos.css";
 import Contenido from './componentsEjemplo/Contenido';
 import Menu from './componentsEjemplo/Menu';
-import "./estilos.css";
+import Contador from './componentsEjemplo/Contador';
+import Boton from "./componentsEjemplo/Boton";
+import {store} from "./store/store";
+import {Provider} from "react-redux";
+
 
 let App = () => {
   
   
   return (
-    <>
+    <Provider store={store}>
       <Menu/>
       <Contenido/>
-    </>
+
+      
+      <Contador/>
+      <Boton/>
+    </Provider>
    
 
   );
